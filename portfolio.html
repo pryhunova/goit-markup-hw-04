@@ -42,10 +42,21 @@
         <!-- Контакты -->
         <address class="main-nav">
           <ul class="contacts list">
-            <li class="item">
+            <li>
+              <svg class="mail" width="16px" height="11.2px">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+            </li>
+
+            <li class="item mailto">
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
+            </li>
+            <li>
+              <svg class="tel" width="10px" height="14.94px">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
             </li>
             <li class="item">
               <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
@@ -246,6 +257,7 @@
     </main>
 
     <!-- Подвал -->
+
     <footer class="footer">
       <div class="conteiner">
         <div class="adress-item">
@@ -254,8 +266,10 @@
             <span class="logo-invert">Studio</span>
           </a>
           <address class="address-footer">
-            <span>г. Киев, пр-т Леси Украинки, 26</span>
-            <a href="mailto:info@devstudio.com" class="contacts-footer link"
+            <span class="location">г. Киев, пр-т Леси Украинки, 26</span>
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts-footer mail link"
               >info@devstudio.com
             </a>
 
@@ -270,30 +284,32 @@
           <b class="social">Присоединяйтесь</b>
           <ul class="label list">
             <li class="item">
-              <a href="" class="link" aria-label="мы в facebook">
-                <img
-                  src="./images/icons/footer-facebook.svg"
-                  alt="мы в facebook"
-              /></a>
+              <a href="" class="link" aria-label="мы в instagram">
+                <svg class="social-icon-footer">
+                  <use href="./images/sprite.svg#icon-footer-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="item">
               <a href="" class="link" aria-label="мы в twitter">
-                <img src="./images/icons/footer-twitter.svg" alt="мы в twitter"
-              /></a>
+                <svg class="social-icon-footer">
+                  <use href="./images/sprite.svg#icon-footer-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="item">
-              <a href="" class="link" aria-label="мы в instagram">
-                <img
-                  src="./images/icons/footer-instagram.svg"
-                  alt="мы в instagram"
-              /></a>
+              <a href="" class="link" aria-label="мы в facebook">
+                <svg class="social-icon-footer">
+                  <use href="./images/sprite.svg#icon-footer-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="item">
-              <a href="" class="link" aria-label="мы в linkedIn">
-                <img
-                  src="./images/icons/footer-linkedin.svg"
-                  alt="мы в linkedIn"
-              /></a>
+              <a href="" class="link" aria-label="мы в linkedin">
+                <svg class="social-icon-footer">
+                  <use href="./images/sprite.svg#icon-footer-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
