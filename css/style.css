@@ -415,15 +415,12 @@ p {
 .team-icons:last-child {
   margin-right: 0;
 }
-.team-icons {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.team-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px;
-}
-.team-icons:hover,
-.team-icons:focus {
-  background-color: var(--accent-color);
+  border-radius: 50px;
 }
 
 .social-icon {
@@ -431,8 +428,14 @@ p {
   height: 20px;
   fill: #afb1b8;
 }
-.social-icon:hover,
-.social-icon:focus {
+
+.team-social .team-icons a:hover,
+.team-social .team-icons a:focus {
+  background-color: var(--accent-color);
+}
+
+.team-social .team-icons a:hover .social-icon,
+.team-social .team-icons a:focus .social-icon {
   fill: #ffffff;
 }
 
@@ -580,10 +583,6 @@ p {
   height: 20px;
 }
 
-.team-icons:hover,
-.team-icons:focus {
-  background-color: var(--accent-color);
-}
 /*margin-right: 10px;*/
 .social-list .item {
   width: calc((100% - 30px) / 4);
