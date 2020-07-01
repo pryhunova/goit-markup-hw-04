@@ -113,6 +113,7 @@ p {
 .site-nav {
   display: flex;
   margin-left: 85px;
+  margin-right: 305px;
 }
 .site-nav .item {
   margin-right: 50px;
@@ -135,50 +136,50 @@ p {
 }
 
 /* контакты в шапке */
-.contacts {
-  margin-left: 305px;
+
+.contacts-header {
+  display: flex;
+  align-items: center;
 }
 
-.contacts .link {
-  display: block;
-  color: var(--secondary-text-color);
-  font-style: normal;
+.contacts-header .item + .item {
+  margin-left: 30px;
+}
+
+.contacts-header a {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15;
   letter-spacing: 0.02em;
+  font-style: normal;
+  text-decoration: none;
+  color: #757575;
 }
-.contacts .link:hover,
-.contacts .link:focus {
+
+.contacts-header a:hover,
+.contacts-header a:focus {
   color: var(--accent-color);
 }
 
-/* контейнер адрес */
-.contacts .item + .item {
-  margin-left: 50px;
+.tel-icon {
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+  fill: currentColor;
 }
-.contacts {
-  display: flex;
-}
-.contacts .item:hover,
-.contacts .item:focus {
-  color: var(--accent-color);
+
+.mail-icon {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 .contacts .mail,
 .contacts .tel {
   margin-right: 10px;
   fill: #757575;
-}
-.contacts .mail:hover,
-.contacts .mail:focus {
-  fill: var(--accent-color);
-}
-.contacts .tel:hover,
-.contacts .tel:focus {
-  fill: var(--accent-color);
-}
-.contacts .mailto {
-  margin-right: 30px;
 }
 
 /* герой */
