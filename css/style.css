@@ -634,8 +634,16 @@ p {
 }
 /* скрытый заголовок портфолио */
 .portfolio-title-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect (0 0 0 0);
+  overflow: hidden;
 }
+
 /* кнопки-фильтр */
 .btn {
   margin-bottom: 50px;
